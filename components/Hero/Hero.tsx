@@ -124,8 +124,8 @@ export default function Hero() {
             <Button
               position="left"
               icon={<Calendar size={18} />}
-              title="Schedule Call"
-              onClick={() => window.open("", "_blank")}
+              title="Schedule Zoom Meeting"
+              onClick={() => window.open("https://calendly.com/houtariabigail/30min", "_blank")}
             />
           </motion.div>
         </div>
