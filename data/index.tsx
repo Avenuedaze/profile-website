@@ -55,6 +55,12 @@ export const pagesLists: pagesListsType[] = [
     href: "/about",
     icon: <Zap />,
   },
+  {
+    id: 3,
+    title: "Projects",
+    href: "/projects",
+    icon: <Zap />,
+  },
   // {
   //   id: 3,
   //   title: "Contact",
@@ -111,6 +117,42 @@ export const mySkills: mySkillsTypes[] = [
     id: 8,
     name: "Basic Failure Theory",
   },
+  {
+    id: 9,
+    name: "OptimumLap",
+  },
+  {
+    id: 10,
+    name: "Mechanical Engineering",
+  },
+  {
+    id: 11,
+    name: "Technical Documentation",
+  },
+  {
+    id: 12,
+    name: "English (Native)",
+  },
+  {
+    id: 13,
+    name: "Spanish (Limited Working)",
+  },
+  {
+    id: 14,
+    name: "MOS: PowerPoint",
+  },
+  {
+    id: 15,
+    name: "MOS: Excel",
+  },
+  {
+    id: 16,
+    name: "MOS: Word",
+  },
+  {
+    id: 17,
+    name: "National Honor Society (Delta HS)",
+  },
 ];
 
 export const counterLists: counterListsType[] = [
@@ -132,41 +174,63 @@ export const counterLists: counterListsType[] = [
   {
     id: 4,
     title: "Awards & Scholarships",
-    value: 6,
+    value: 3,
   },
 ];
 
 export const myExperience: myExperienceTypes[] = [
   {
     id: 1,
-    year: "2023 - Present",
-    title: "Peer Tutor and Teaching Assistant",
-    company: "University of Washington",
+    year: "Sep 2024 – Present",
+    title: "Physics and Mathematics Tutor",
+    company: "University of Washington Bothell",
     label: "university",
     description:
-      "Tutor 7+ students weekly in Calculus (I-III) and Physics, enhancing their comprehension of complex concepts including Statics, Dynamics, Strengths of Materials, and Electromagnetism. Research and implement effective pedagogical strategies to enhance student learning and engagement, presented findings at the UW School of STEM’s 2024 Research Symposium.",
+      "Tutor 7+ students weekly in Calculus (I–III) and Physics; enhance comprehension in Statics, Dynamics, Strengths of Materials, and Electromagnetism; contribute to focus groups improving tutoring center resources and effectiveness.",
     link: "",
     logo: UWLogo,
   },
   {
     id: 2,
-    year: "June 2024 - Sep 2024",
-    title: "Facilities Engineering Intern",
+    year: "Jan 2024 – Present",
+    title: "Mechanical Team Member",
+    company: "UW Bothell Formula Racing (FSAE)",
+    label: "university",
+    description:
+      "Designing and modeling the upper steering assembly in SOLIDWORKS; designed drivetrain sprockets with material selection, thermal considerations, and fatigue analysis; performed torque and power transmission calculations to validate drivetrain performance to FSAE standards.",
+    link: "",
+    logo: UWLogo,
+  },
+  {
+    id: 3,
+    year: "Jun 2024 – Sep 2024",
+    title: "Mechanical Engineering Intern",
     company: "Energy Northwest",
     label: "company",
     description:
-      "Utilized AutoCAD to create detailed architectural and electrical plans for 10+ facility and commercial engineering projects at Columbia Generating Station. Conducted area walk-downs and created AutoCAD as-built drawings for 5+ engineering documentation packages, ensuring precision in material selection and structural modifications. Contributed to project iteration plans, resulting in an estimated 7% reduction in design errors.",
+      "Drafted and updated AutoCAD plans for 15+ facility engineering upgrades including space reconfigurations and custom furniture layouts for offices supporting 100+ staff. Conducted field walk-downs and produced as-built drawings for 5+ major remodels, improving documentation accuracy and reducing construction ambiguity.",
     link: "",
     logo: EnergyNorthwest,
   },
   {
-    id: 3,
-    year: "Aug 2020 - Sep 2023",
-    title: "Instrumentation Lab Intern",
+    id: 4,
+    year: "Mar 2024 – Jun 2024",
+    title: "Undergraduate Teaching Assistant",
+    company: "University of Washington Bothell",
+    label: "university",
+    description:
+      "Selected by faculty to serve as a TA; led lab sessions and presented research comparing two flipped learning models in physics instruction at the 2024 UW STEM Research Symposium, emphasizing inclusive STEM pedagogy.",
+    link: "",
+    logo: UWLogo,
+  },
+  {
+    id: 5,
+    year: "Aug 2022 – Sep 2023",
+    title: "Work Based Learning Intern (Instrumentation)",
     company: "Energy Northwest",
     label: "company",
     description:
-      "Developed and implemented a new calibration tracking system, improving efficiency by 10%. Conducted water sample testing critical to nuclear power plant facility operations, following strict environmental and radiological lab protocols. Gained hands-on experience in NRC laboratory safety compliance, materials testing, and data reporting. Automated the distribution of over 400 invoice emails, saving an estimated 5 hours of labor per week.",
+      "Spearheaded calibration asset tracking system preventing loss of equipment during off-site calibration and improving inventory accuracy in an A2LA-accredited laboratory. Managed monthly invoices for thousands of calibration assets; independently processed invoices during mentor absence, contributing to a record-breaking monthly profit.",
     link: "",
     logo: EnergyNorthwest,
   },
@@ -175,12 +239,12 @@ export const myExperience: myExperienceTypes[] = [
 export const myEducation: myEducationTypes[] = [
   {
     id: 1,
-    year: "Expected - June 2027",
-    degree: "BS in Mechanical Engineering",
+    year: "Sept 2023 – June 2027",
+    degree: "Bachelor of Science in Mechanical Engineering",
     college: "University of Washington",
     label: "university",
     description:
-      "Coursework: Dynamics, Strengths of Materials, Multivariate Calculus, Differential equations, Engineering Statistics, Waves, Electromagnetism, Thermodynamics, Machine design, Fluid Mechanics.",
+      "Relevant Coursework: Machine design, Dynamics, Strengths of Materials, Thermodynamics, Fluid Mechanics, 3D Modeling Design.",
     link: "",
     logo: UWLogo,
   },
@@ -190,7 +254,7 @@ export const myEducation: myEducationTypes[] = [
     degree: "Associate of Arts",
     college: "Columbia Basin College",
     label: "college",
-    description: "I achieved XYZ",
+    description: "",
     link: "",
     logo: CBC,
   },
@@ -200,7 +264,7 @@ export const myEducation: myEducationTypes[] = [
     degree: "High School Diploma",
     college: "Delta High School",
     label: "high school",
-    description: "I achieved XYZ",
+    description: "GPA: 3.5/4.0",
     link: "",
     logo: Delta,
   },
@@ -227,6 +291,13 @@ export const myStack: myStackTypes[] = [
     description: "Productivity Suite",
     logo: TfiMicrosoftAlt,
     link: "https://www.microsoft.com/en/microsoft-365",
+  },
+  {
+    id: 7,
+    title: "OptimumLap",
+    description: "Lap time simulation tool",
+    logo: FaChartBar,
+    link: "https://www.optimumg.com/simulation-software/optimumlap/",
   },
   {
     id: 4,
@@ -287,6 +358,17 @@ export const myServices: myServicesTypes[] = [
 ];
 
 export const myShowCases: myShowCasesTypes[] = [
+  {
+    id: 0,
+    title: "UW Bothell Formula Racing – Steering & Drivetrain",
+    description:
+      "Designed upper steering assembly in SOLIDWORKS; engineered drivetrain sprockets with fatigue analysis, material selection, and thermal considerations; validated torque and power transmission to FSAE standards.",
+    link: "",
+    type: "FSAE",
+    theme: "Dark",
+    pages: 1,
+    image: project_3,
+  },
   {
     id: 1,
     title: "Devcraft",

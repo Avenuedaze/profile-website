@@ -23,7 +23,7 @@ const ibmPlexMono = IBM_Plex_Mono({
 export const metadata: Metadata = {
   title: "Abigail • Portfolio",
   description:
-    "Abigail's personal portfolio showcasing projects, skills, and experience.",
+    "Mechanical Engineering intern candidate with hands-on experience in nuclear power and clean energy. Proficient in SOLIDWORKS (CSWA) and AutoCAD.",
 };
 
 export default function RootLayout({
@@ -41,7 +41,7 @@ export default function RootLayout({
       >
         <ThemeProvider
           attribute="data-theme"
-          defaultTheme="dark"
+          defaultTheme="light"
           enableSystem
           disableTransitionOnChange
         >

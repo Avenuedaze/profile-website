@@ -91,10 +91,10 @@ export default function Hero() {
             viewport={{ once: true }}
             className="text-[18px] text-light-gray-2 font-medium leading-[150%] mb-4 text-center sm:text-left"
           >
-            Mechanical Engineering student at the University of Washington,
-            passionate about applying my skills to impactful engineering
-            projects. Let&apos;s have a discussion about how we can work
-            together.
+            Passionate Mechanical Engineering intern candidate with hands-on
+            experience in nuclear power and clean energy through Energy
+            Northwest. Proficient in SOLIDWORKS (CSWA) and AutoCAD; eager to
+            contribute in regulated engineering environments. Let&apos;s connect.
           </motion.p>
 
           {/* Buttons stacked on mobile */}

@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from "react";
+import { useTheme } from "next-themes";
 import AvailableForWorkBtn from "../ui/AvailableForWorkBtn";
 import { Equal, X } from "lucide-react";
 import SideNavbar from "../SideNavbar/SideNavbar";
@@ -38,6 +39,7 @@ export default function Navbar() {
   // }, []);
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { resolvedTheme } = useTheme();
 
   const toggleMenu = () => {
     setIsMenuOpen((prev) => !prev);
@@ -74,7 +76,11 @@ export default function Navbar() {
       {/* SideNavbar for mobile*/}
       {isMenuOpen && (
         <div
-          className="fixed inset-0 bg-black bg-opacity-50 z-10"
+          className={`fixed inset-0 z-10 transition-colors duration-300 ${
+            resolvedTheme === "dark"
+              ? "bg-[#18181a]/80" // dark background with opacity
+              : "bg-white/80" // light background with opacity
+          }`}
           onClick={toggleMenu}
         >
           <SideNavbar isMenuOpen={isMenuOpen} />
