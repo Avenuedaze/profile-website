@@ -7,6 +7,13 @@ import React from "react";
 import SectionHeading from "../SectionHeading";
 import { motion } from "framer-motion";
 
+function getBullets(description: string) {
+  return description
+    .split(/\n|;/)
+    .map((line) => line.trim())
+    .filter((line) => line.length > 0);
+}
+
 export default function MyExperience() {
   return (
     <div className="flex items-start flex-none flex-col flex-nowrap gap-[30px] h-min justify-start overflow-visible relative w-full ">
@@ -99,9 +106,11 @@ export default function MyExperience() {
                   </p>
                 </div>
                 <div className="flex flex-none flex-shrink-0 flex-col justify-start relative whitespace-pre-wrap w-full break-words">
-                  <p className="text-light-gray-2 text-[15px] text-base font-medium ">
-                    {exp.description}
-                  </p>
+                  <ul className="list-disc ml-6 text-light-gray-2 text-[15px] font-medium">
+                    {getBullets(exp.description).map((bullet, i) => (
+                      <li key={i}>{bullet}</li>
+                    ))}
+                  </ul>
                 </div>
               </div>
             </motion.li>

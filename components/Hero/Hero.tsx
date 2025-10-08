@@ -1,10 +1,9 @@
 "use client";
-import { AvatarMe, handGif } from "@/app/assets/assets";
+import { AvatarMe, handGif, wrenchIcon } from "@/app/assets/assets";
 import Image from "next/image";
 import React from "react";
 import { Mail, Calendar } from "lucide-react";
 import Button from "../ui/Button";
-
 import { motion } from "framer-motion";
 import AnimatedImageGrid from "../ui/AnimatedImageGrid";
 import CounterContainer from "../CounterContainer/CounterContainer";
@@ -91,10 +90,9 @@ export default function Hero() {
             viewport={{ once: true }}
             className="text-[18px] text-light-gray-2 font-medium leading-[150%] mb-4 text-center sm:text-left"
           >
-            Passionate Mechanical Engineering intern candidate with hands-on
-            experience in nuclear power and clean energy through Energy
-            Northwest. Proficient in SOLIDWORKS (CSWA) and AutoCAD; eager to
-            contribute in regulated engineering environments. Let&apos;s connect.
+            Mechanical Engineering student at the University of Washington, eager
+            to contribute technical skills to innovative engineering projects. I’m
+            ready to collaborate — let’s discuss how I can add value to your team.
           </motion.p>
 
           {/* Buttons stacked on mobile */}
@@ -146,7 +144,6 @@ export default function Hero() {
         }}
         viewport={{ once: true }}
       >
-        {/* bottom  */}
         <CounterContainer />
       </motion.div>
     </div>

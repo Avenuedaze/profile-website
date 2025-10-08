@@ -8,6 +8,20 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 
 export default function MyServices() {
+  // Remove Carbon Fiber Composite Design and update Automation
+  const filteredServices = myServices
+    .filter((service) => service.title !== "Carbon Fiber Composite Design")
+    .map((service) =>
+      service.title === "Programming & Automation"
+        ? {
+            ...service,
+            title: "Automation",
+            description:
+              "Utilizing python for system automation, data analysis, and control systems.",
+          }
+        : service
+    );
+
   return (
     <div className="flex items-start flex-none flex-col flex-nowrap gap-[30px] h-min justify-start overflow-visible relative w-full ">
       <div className="flex-none h-auto relative w-full">
@@ -23,7 +37,7 @@ export default function MyServices() {
           whileInView={{ opacity: 1 }}
           className="grid gap-[10px] flex-none auto-rows-min h-min justify-center overflow-visible relative p-0 w-full grid-cols-1 lg:grid-cols-[repeat(2,minmax(50px,1fr))] lg:grid-rows-[repeat(2,min-content)] "
         >
-          {myServices?.map((service, index) => (
+          {filteredServices?.map((service, index) => (
             <motion.li
               key={service.id}
               initial={{ opacity: 0, y: 20 }}
