@@ -86,23 +86,18 @@ export default function ShowCase({
                   </div>
 
                   <div className="border-y border-dark-gray-3 flex flex-none gap-3 h-min justify-start overflow-visible px-0 py-3 relative w-full flex-nowrap items-center">
-                    <div className="flex flex-col flex-shrink-0 flex-none h-auto whitespace-pre w-auto relative ">
-                      <p className="text-light-gray-2 text-[15px] font-medium ">
-                        {item.type}
-                      </p>
-                    </div>
-                    <div className="bg-medium-gray rounded-full h-[5px] aspect-square flex-none relative w-[5px] "></div>
-                    <div className="flex flex-col flex-shrink-0 flex-none h-auto whitespace-pre w-auto relative ">
-                      <p className="text-light-gray-2 text-[15px] font-medium ">
-                        {item.pages} Pages
-                      </p>
-                    </div>
-                    <div className="bg-medium-gray rounded-full h-[5px] aspect-square flex-none relative w-[5px] "></div>
-                    <div className="flex flex-col flex-shrink-0 flex-none h-auto whitespace-pre w-auto relative ">
-                      <p className="text-light-gray-2 text-[15px] font-medium ">
-                        {item.theme} Theme
-                      </p>
-                    </div>
+                    {item.skills && item.skills.slice(0, 3).map((skill, idx) => (
+                      <React.Fragment key={skill}>
+                        <div className="flex flex-col flex-shrink-0 flex-none h-auto whitespace-pre w-auto relative ">
+                          <p className="text-light-gray-2 text-[15px] font-medium ">
+                            {skill}
+                          </p>
+                        </div>
+                        {idx < item.skills.slice(0, 3).length - 1 && (
+                          <div className="bg-medium-gray rounded-full h-[5px] aspect-square flex-none relative w-[5px] "></div>
+                        )}
+                      </React.Fragment>
+                    ))}
                   </div>
                 </div>
 

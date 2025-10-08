@@ -339,10 +339,9 @@ export const myShowCases: myShowCasesTypes[] = [
     title: "UW Bothell Formula Racing – Steering & Drivetrain",
     description:
       "Designing our Formula SAE car's upper steering assembly in SOLIDWORKS, defining geometry and fit with the chassis and drivetrain; Engineered drivetrain sprockets with material selection, thermal considerations, and fatigue analysis to improve durability; Performed torque and power transmission calculations to ensure compliance with FSAE standards.",
-    link: "https://www.instagram.com/uwb.brd/",
-    type: "FSAE",
-    theme: "Dark",
-    pages: 1,
+    skills: ["SOLIDWORKS", "Material Selection", "Fatigue Analysis"], // <-- Make sure this exists
+    year: 2024,
+    tool: "SOLIDWORKS",
     image: "https://fsaeonline.com/cdsweb/SharedComponents/fsaeonline.com/img/home_banner.jpg",
   },
 ];
